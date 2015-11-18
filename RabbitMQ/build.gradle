@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'jetty'
+apply plugin: 'eclipse-wtp'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework:spring-webmvc:4.2.1.RELEASE'
+    compile 'javax.servlet:jstl:1.2'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.6.2'
+    compile 'org.apache.tomcat:catalina:6.0.44'
+    compile 'com.rabbitmq:amqp-client:3.5.4'
+}
